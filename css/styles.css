@@ -720,8 +720,6 @@ img {
   margin-right: 8px;
   transition: background-color var(--transition-auto),
     border var(--transition-auto), fill var(--transition-auto);
-
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;

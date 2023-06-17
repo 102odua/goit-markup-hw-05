@@ -625,7 +625,7 @@ img {
   position: relative;
 }
 .form-item {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .input-row {
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -661,6 +661,9 @@ img {
   transform: translateY(-50%);
   transition: fill var(--transition-auto);
 }
+.form-item-textarea {
+  margin-bottom: 16px;
+}
 .input-area {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -686,7 +689,9 @@ img {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
-
+.form-item-checkbox {
+  margin-bottom: 24px;
+}
 .modal-check {
   font-size: 12px;
   line-height: 1.17;
@@ -695,7 +700,7 @@ img {
   display: flex;
   align-items: center;
 }
-.modal-check span {
+.modal-check-span {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   width: 16px;
@@ -705,15 +710,15 @@ img {
   justify-content: center;
   margin-right: 8px;
   transition: background-color var(--transition-auto),
-    border-color var(--transition-auto), fill var(--transition-auto);
-  display: flex;
+    border var(--transition-auto), fill var(--transition-auto);
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
 }
-.input-checkbox:checked + .modal-check span {
+.input-checkbox:checked + .modal-check .modal-check-span {
   background-color: var(--pressed-color);
-  border-color: var(--pressed-color);
+  border: none;
   fill: var(--light-color);
 }
 
@@ -740,7 +745,6 @@ img {
   cursor: pointer;
   display: block;
   margin: 0 auto;
-  margin-top: 16px;
 }
 .policy-btn:hover,
 .policy-btn:focus {

@@ -465,10 +465,15 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="form-item">
-            <label class="modal-label" for="name">Name</label>
+            <label class="modal-label" for="user-name">Name</label>
             <div class="modal-input-icon">
-              <input type="text" name="name" id="name" class="input-row" />
-              <svg class="input-icon" width="18" height="18">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="input-row"
+              />
+              <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -482,7 +487,7 @@
                 id="telephone"
                 class="input-row"
               />
-              <svg class="input-icon" width="18" height="18">
+              <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -491,17 +496,17 @@
             <label class="modal-label" for="email">Email</label>
             <div class="modal-input-icon">
               <input type="email" name="email" id="email" class="input-row" />
-              <svg class="input-icon" width="18" height="18">
+              <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
           <!-- text area -->
           <div class="form-item">
-            <label class="modal-label" for="area-text">Comment</label>
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
-              id="area-text"
-              name="area-text"
+              id="user-comment"
+              name="user-comment"
               class="input-area"
               placeholder="Text input"
             ></textarea>
@@ -519,7 +524,7 @@
               <span
                 ><svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use></svg></span
-              >I accept the terms and conditions of the&nbsp
+              >I accept the terms and conditions of the
               <a class="policy-link" href="">Privacy Policy</a>
             </label>
           </div>

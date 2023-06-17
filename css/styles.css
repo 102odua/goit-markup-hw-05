@@ -509,7 +509,9 @@ img {
   display: block;
   width: 264px;
   height: 40px;
-
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   padding-left: 16px;
   color: var(--white-bg-color);
   outline: none;
@@ -539,14 +541,14 @@ img {
   border: none;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   padding-left: 24px;
-  gap: 16px;
   cursor: pointer;
   transition: background-color var(--transition-auto);
 }
 .footer-subscribe-icon {
   fill: var(--white-bg-color);
+  margin-left: 16px;
 }
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus {
@@ -718,6 +720,7 @@ img {
   margin-right: 8px;
   transition: background-color var(--transition-auto),
     border var(--transition-auto), fill var(--transition-auto);
+
   display: inline-flex;
   align-items: center;
   justify-content: center;

@@ -442,6 +442,8 @@ img {
 .footer-soc-frame {
   max-width: 208px;
   margin-right: 80px;
+  /* display: flex;
+  flex-direction: column; */
 }
 .footer-soc-text {
   font-weight: 500;
@@ -482,12 +484,16 @@ img {
 
 .footer-subscribe-frame {
   max-width: 453px;
+  height: 80px;
   display: flex;
-  margin-right: a0;
+  flex-direction: column;
+  margin-right: 0;
 }
 .footer-subscribe-form {
+  display: flex;
+  /* gap: 24px; */
 }
-.footer-subscribe-label {
+.footer-subscribe-tittle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -507,6 +513,7 @@ img {
   padding-left: 16px;
   color: var(--white-bg-color);
   outline: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .footer-subscribe-input:focus {
   border-color: var(--second-color);
@@ -523,6 +530,7 @@ img {
   height: 40px;
   background: var(--second-color);
   border-radius: 4px;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;

@@ -542,7 +542,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 24px;
   cursor: pointer;
   transition: background-color var(--transition-auto);
 }
@@ -668,6 +667,7 @@ img {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  fill: var(--main-color);
   transition: fill var(--transition-auto);
 }
 .form-item-textarea {
